@@ -1,11 +1,8 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
-*.iml
 *.ipr
+*.iml
 *.iws
-.gradle
+*.gradle/*
+out/
 build/
+src/test/java/com/test/mars/rover/*
+src/main/java/com/test/mars/rover/*
