@@ -1,12 +1,13 @@
 package com.test.sample.factory;
 
 public class AnimalStore {
-    private Dog dog;
-    private Cat cat;
+
+    Animal cat;
+    Animal dog;
 
     public int countLegs(){
-        dog = new Dog();
-        cat = new Cat();
+        dog = AnimalFactory.dogCreator();
+        cat = AnimalFactory.catCreator();
         return dog.legs()+cat.legs();
     }
 
