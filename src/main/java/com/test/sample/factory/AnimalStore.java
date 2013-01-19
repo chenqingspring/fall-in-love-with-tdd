@@ -6,8 +6,10 @@ public class AnimalStore {
     Animal dog;
 
     public int countLegs(){
-        dog = AnimalFactory.dogCreator();
-        cat = AnimalFactory.catCreator();
+        AnimalFactory catFactory = new CatFactory();
+        AnimalFactory dogFactory = new DogFactory();
+        dog = dogFactory.animalCreator();
+        cat = catFactory.animalCreator();
         return dog.legs()+cat.legs();
     }
 
